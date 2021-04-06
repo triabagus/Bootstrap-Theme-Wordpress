@@ -1,0 +1,62 @@
+/*
+Theme Name: Bootstrap Theme Wordpress 
+Author: Tria Bagus
+Author URI: https://triabagus.xyz/
+Description: Default theme bootstrap blog standards get from getbootstrap.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Standard, Default, Bootstrap, Responsive, Blog
+Text Domain: Bootstrap-Theme-Wordpress
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/    
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", 'Georgia', "Times New Roman", 'serif' !important;
+}
+
+.blog-header-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 2rem;
+}
+
+.blog-footer{
+    margin-top:50px;
+    padding: 2.5rem 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
+}
+
+.img-logo{
+    width:40px;
+    height:40px;
+    margin-top:-15px;
+}
+ 
+#Search{
+    width: 250px;
+    height: 40px;
+    border: 2px solid #343a40;
+    padding-left: 20px;
+    padding-top: 1px;
+    font-size: 1.25rem;
+    color: blue;
+    background-image: url(images/search.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    outline: 0;
+    position: fixed;
+    right: 120px;
+    top: 105px;
+    z-index:999;
+}
+
+#Search::-webkit-search-cancel-button{
+    position:relative;
+    right:20px;    
+}
