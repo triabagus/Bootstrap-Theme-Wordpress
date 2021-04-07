@@ -13,9 +13,15 @@
                 endwhile;
         ?>
             <div class="d-flex justify-content-between">
-                <?php 
-                    previous_post_link('%link', '%title', true);
-                    next_post_link('%link', '%title', true);
+                <?php  
+                    $prevPost = get_previous_post();
+                    $prevThumbnail = get_the_post_thumbnail( $prevPost->ID, array( 'class' => 'img-fluid img-100'));
+
+                    $nextPost = get_next_post();
+                    $nextThumbnail = get_the_post_thumbnail( $nextPost->ID, array( 'class' => 'img-fluid img-100'));
+
+                    previous_post_link('%link', $prevThumbnail.' %title', true);
+                    next_post_link('%link', $nextThumbnail.' %title', true);
                 ?>
             </div>
         <?php
