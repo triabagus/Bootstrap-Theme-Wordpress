@@ -11,6 +11,8 @@
                     the_post();
                     get_template_part('template-parts/single', get_post_format() );
                 endwhile;
+                previous_post_link();
+                next_post_link();
             endif;
         ?>   
     </div><!-- /.blog-main --> 

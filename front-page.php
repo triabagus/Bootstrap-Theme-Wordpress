@@ -48,13 +48,13 @@
                     the_post();
                     get_template_part('template-parts/content', get_post_format() );
                 endwhile;
+                ?>
+                <nav class="blog-pagination mt-5"> 
+                <?php echo paginate_links(); ?>
+                </nav>
+        <?php
             endif;
-        ?> 
-
-      <nav class="blog-pagination mt-5">
-        <a class="btn btn-outline-primary" href="#">Older</a>
-        <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
-      </nav>
+        ?>  
 
     </div><!-- /.blog-main -->
 
