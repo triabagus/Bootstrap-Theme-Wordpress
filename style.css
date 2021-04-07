@@ -92,3 +92,23 @@ a.page-numbers:hover {
     background-color: transparent;
 	text-decoration: none;
 }
+
+.page-links {
+    text-align: center;
+    margin: 10px -2px -4px;
+}
+
+.page-links {
+    display: inline-block;
+    line-height: 32px;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 0 13px;
+    border-radius: 2px;
+}
+
+.page-links:hover{
+    text-decoration:none;
+    color: #6c757d;
+    background-color: transparent;
+	text-decoration: none;
+}

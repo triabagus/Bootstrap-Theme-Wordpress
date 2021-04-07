@@ -11,8 +11,14 @@
                     the_post();
                     get_template_part('template-parts/single', get_post_format() );
                 endwhile;
-                previous_post_link();
-                next_post_link();
+        ?>
+            <div class="d-flex justify-content-between">
+                <?php 
+                    previous_post_link('%link', '%title', true);
+                    next_post_link('%link', '%title', true);
+                ?>
+            </div>
+        <?php
             endif;
         ?>   
     </div><!-- /.blog-main --> 
