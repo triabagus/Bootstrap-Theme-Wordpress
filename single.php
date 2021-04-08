@@ -24,13 +24,16 @@
                     next_post_link('%link', $nextThumbnail.' %title', true);
                 ?>
             </div>
+            <?php 
+                if( comments_open() ):
+                    comments_template();
+                endif; 
+            ?>  
         <?php
             endif;
         ?>   
-    </div><!-- /.blog-main --> 
-
-  </div><!-- /.row -->
-
+    </div><!-- /.blog-main -->  
+  </div><!-- /.row --> 
 </main><!-- /.container -->
 <?php
     get_footer();
